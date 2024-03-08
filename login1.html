@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <!--Styling Css only-->
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .background{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            min-height: 100vh;
+            background-image: url(./images/bann.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            z-index: -1;
+            filter: blur(3px);
+        }
+        .login
+        {
+            padding: 10px 10px;
+            letter-spacing: 2px;
+            font-size: 20;
+            cursor: pointer;
+        }
+        .container{
+            height: 730px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .login-form{
+            background-color: white;
+            width: 500px;
+            height: auto;
+            padding: 30px;
+            display: grid;
+            border-radius: 8px;
+            text-align: left;
+        }
+        input[type=text]
+        {
+            margin-bottom: 20px;
+            border-radius: 7px;
+            padding: 9px;
+            margin-top: 3px;
+            font-size: 14px;
+        }
+        input[type=email]
+        {
+            margin-bottom: 20px;
+            border-radius: 7px;
+            padding: 9px;
+            margin-top: 3px;
+            font-size: 14px;
+        }
+        input[type=password]
+        {
+            margin-bottom: 20px;
+            border-radius: 7px;
+            padding: 9px;
+            margin-top: 3px;
+            font-size: 14px;
+        }
+        .login{
+            background-color: crimson;
+            padding: 8px;
+            border: none;
+            margin-top: 19px;
+            margin-bottom: 19px;
+            border-radius: 70px;
+            transition: 0.5s ease;
+        }
+        .login a{
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: medium;
+        }
+        .forget{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .forget a{
+            color: crimson;
+            text-decoration: none;
+
+        }
+        .forget a:hover{
+            color: darkred;
+        }
+         .container .btn-close{
+            background-color: transparent;
+            border: 0;
+            color: black;
+            font-size: 30px;
+            cursor: pointer;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            right: 512px;
+            top: 70px;
+            border-radius: 43%;
+            transition: all 0.2s ease-in;
+        }
+        @media only screen and (max-width:710px) and (max-width:810px) {
+             .container .btn-close{
+                right:10px;
+                top: 70px;
+              
+            }
+        }
+        @media only screen and (max-width:800px){
+            .container .btn-close{
+                right:200px;
+                top: 70px;
+            }
+        }
+         @media only screen and (min-width:910px) and (max-width:1200px){
+            .container .btn-close{
+                right:115px;
+                top: 70px;
+               
+            }
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <a href="index.html">
+            <button  class="btn-close">&times;</button>
+        </a>
+        <form class="login-form">
+            <h2 style="color: red;">Register</h2>
+            <hr>
+            <br>
+            <br>
+            Name:<input type="text" placeholder="Enter Your Name">
+            Email:<input type="email" placeholder="Enter email">
+            Create Password: <input type="password" placeholder="Enter Passward">
+            Confirm Password: <input type="password" placeholder="Confirm Passward">
+            <button class="login"><a href="">Register</a></button>
+            <br>
+            <br>
+            <hr>
+            <br>
+            <div class="forget">
+                <div><p>Email Verification Is</p>
+                    Required,    
+                </div>
+                <div><p>Already have an account?</p>
+                    Click <a href="login.html">here</a>
+                </div>    
+
+            </div>
+        </form>
+    </div>
+</body>
+</html>
