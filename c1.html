@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <div class="contact-container">
+        <a href="index.html">
+            <button  class="btn-close">&times;</button>
+        </a>
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+            <div class="contact-left-title">
+                <h2>Contact For Any Query</h2>
+                <hr>
+            </div>
+            <input type="hidden" name="access_key" value="5fddead1-d4ad-4cfb-b90a-8e36e443778b">
+            <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+            <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+            <input type="phone" name="phone" placeholder="Your PhoneNo" class="contact-inputs" required>
+            <textarea name="massage" placeholder="Your massage...." class="contact-inputs" required></textarea>
+            <button type="submit">Send Massage <img src="./images/arrow_icon.png" alt="" ></button>
+        </form>
+        
+        <div class="map-class" data-wow-delay="0.1s">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d854.5175654197769!2d83.6661!3d27.536401!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399427b44e03696b%3A0x26e15bc7fd3d306a!2sThe%20Kohinoor%20Cafe%20and%20Restaurant!5e1!3m2!1sen!2sin!4v1709471151465!5m2!1sen!2sin"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        
+    </div>
+</body>
+</html>
