@@ -434,6 +434,19 @@ img{
     box-shadow: 0 2px 15px rgb(250,120,69);
     transition: all 0.2s;
 }
+.white_btnH{
+    cursor: pointer;
+    margin-top: 20px;
+    width: 85px;
+    font-weight: bold;
+    color: rgb(253, 77, 8);
+    line-height: 33px;
+    border: 1px solid rgb(253, 77, 8);
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 15px rgb(250,120,69);
+    transition: all 0.2s;
+}
 
 .white_btn:hover{
     color: white;
@@ -476,7 +489,21 @@ img{
     margin-bottom: 15px;
 
 }
+.size h4{
+    font-size: large;
+}
+.size p{
+    font-size: x-small;
+}
 .q-ans{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px 0;
+    cursor: pointer;
+
+}
+.q-ansH{
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -488,9 +515,21 @@ img{
     width: 45px;
 
 }
+.q-ansH img{
+    width: 45px;
+    border-radius: 12%;
+}
 .q-ans div:first-child{
     padding: 10px;
     border-radius: 50%;
+    height: 65px;
+    text-align: center;
+    background-color: white;
+    margin-right: 20px;
+}
+.q-ansH div:first-child {
+    padding: 11px;
+    border-radius: 13%;
     height: 65px;
     text-align: center;
     background-color: white;
