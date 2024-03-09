@@ -791,6 +791,11 @@ img{
     padding: 0;
     color: rgb(255,137,2);
 }
+.footer-1 a{
+    color: blue;
+    text-decoration: underline;
+    font-size: 13px;
+}
 .footer-1 p img{
     width: 25px;
     margin-bottom: 12px;
