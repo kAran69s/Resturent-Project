@@ -791,7 +791,7 @@ img{
     padding: 0;
     color: rgb(255,137,2);
 }
-.footer-1 p a{
+.footer-1, .p a{
     color: blue;
     text-decoration: underline;
     font-size: 13px;
