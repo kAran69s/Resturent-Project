@@ -64,7 +64,7 @@
             font-size: 14px;
         }
         .login{
-            background-color: crimson;
+            background-color: rgb(255, 98, 0);
             padding: 8px;
             border: none;
             margin-top: 19px;
@@ -92,45 +92,35 @@
         .forget a:hover{
             color: darkred;
         }
-        .btn-close{
-            background-color: transparent;
-            border: 0;
-            color: black;
-            font-size: 30px;
-            cursor: pointer;
-            align-items: center;
-            justify-content: center;
-            position: absolute;
-            right: 512px;
-            top: 140px;
-            border-radius: 43%;
-            transition: all 0.2s ease-in;
-        }
-        @media screen and (max-width:710px) {
-            .btn-close{
-                right:10px;
-                top: 140px;
+        @media only screen and (min-width:600px) and (max-width:1200px){
+            .background{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                min-height: 100vh;
+                background-image: url(./images/bann1.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                z-index: -1;
+                filter: blur(3px);
+            }
+            .container {
+                height: 1500px;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
         }
-        
-         @media only screen and (min-width:711px) and (max-width:1200px){
-            .btn-close{
-                right:115px;
-                top: 140px;
-            }
-        }
-        
         
     </style>
 </head>
 <body>
     <div class="background"></div>
     <div class="container">
-        <a href="index.html">
-            <button  class="btn-close">&times;</button>
-        </a>
-        <form class="login-form">
-            <h2 style="color: red;"> Login</h2>
+       <form class="login-form">
+            <h2 style="color: rgb(255, 0, 0);"> Login</h2>
             <hr>
             <br>
             <br>
@@ -143,7 +133,9 @@
             <br>
             <div class="forget">
                 <div><p>Forget Password?</p>
-                    Click <a href="">here</a>    
+                    Click <a href="">here</a>
+                    <p>_______________</p> 
+                    <p>Close <a href="index.html">home</a></p>   
                 </div>
                 <div><p>Don't have an account?</p>
                     Click <a href="login1.html">here</a>
