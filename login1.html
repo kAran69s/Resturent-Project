@@ -100,7 +100,27 @@
         .forget a:hover{
             color: darkred;
         }
-         
+        @media only screen and (min-width:600px) and (max-width:1200px){
+            .background{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                min-height: 100vh;
+                background-image: url(./images/bann1.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                z-index: -1;
+                filter: blur(3px);
+            }
+            .container {
+                height: 1500px;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
         
         
     </style>
