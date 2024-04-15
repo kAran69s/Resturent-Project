@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Massage</title>
+    <link rel="stylesheet" href="mass.css">
+</head>
+<body>
+    <div class="contact-container">
+        <a href="index.html">
+            <button  class="btn-close">&times;</button>
+        </a>
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+            <div class="contact-left-title">
+                <h2>Get in touch</h2>
+                <hr>
+                
+            </div>
+            <input type="hidden" name="access_key" value="5fddead1-d4ad-4cfb-b90a-8e36e443778b">
+            <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+            <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+            <input type="phone" name="phone" placeholder="Your PhoneNo" class="contact-inputs" required>
+            <textarea name="massage" placeholder="Your massage...." class="contact-inputs" required></textarea>
+            <button type="submit">Send <img src="./images/arrow_icon.png" alt="" ></button>
+        </form>
+        <div class="contact-right">
+            <img src="assets/right_img.pn" alt="">
+        </div>
+    </div>
+</body>
+</html>
